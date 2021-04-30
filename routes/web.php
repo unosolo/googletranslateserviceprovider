@@ -17,6 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/translate', function () {
-  return 'Hello, translate';
-});
+Route::get('/translate', \App\Http\Controllers\TranslatePage::class);
