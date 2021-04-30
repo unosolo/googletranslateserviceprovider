@@ -10,12 +10,12 @@
           <div class="mb-3">
             <label for="exampleFormControlTextarea1"
                    class="form-label">{{ _('Translate from') }} {{ $source_language ?? '' }}</label>
-            <textarea class="form-control" name="translate_from" rows="3">{{ $text ?? '' }}</textarea>
+            <textarea class="form-control" name="translate_from" rows="3">{{ $from_text ?? '' }}</textarea>
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1"
                    class="form-label">{{ _('Into') }} {{ $target_language ?? '' }}</label>
-            <textarea class="form-control" name="translate_into" rows="3"></textarea>
+            <textarea class="form-control" name="translate_into" rows="3">{{ $into_text ?? '' }}</textarea>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
