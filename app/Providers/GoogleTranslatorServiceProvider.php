@@ -14,8 +14,8 @@ class GoogleTranslatorServiceProvider extends ServiceProvider
   public function register()
   {
     $this->app->bind(
-        'App\Interfaces\TranslatorInterface',
-        'App\Providers\GoogleTranslatorServiceProvider'
+        App\Interfaces\TranslatorInterface::class,
+        App\Services\GoogleTranslatorService::class
     );
   }
 
