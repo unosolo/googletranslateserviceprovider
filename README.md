@@ -14,3 +14,4 @@
  country is not allowed to access the Cloud Google API.
 - It  simulates a simple translation and the Service Provider will always return a solo translation. No matter what
  text is provided to be translated. 
+- The service can be accessed by http://Yourdomain/translate?t=Hello%20World
